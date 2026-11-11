@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeShop - Toko Kue Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🧁 CakeShop</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Keranjang</a>
+        <a href="#about">Tentang Kami</a>
+    </nav>
+
+    <a href="#checkout" class="login">Pesan</a>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <p class="pink">Kue lezat, kebahagiaan setiap hari</p>
+
+        <h1>Selamat Datang di<br>
+            <span>CakeShop</span>
+        </h1>
+
+        <p>
+            Temukan berbagai macam kue dan dessert lezat
+            dengan bahan berkualitas dan rasa terbaik.
+            Cocok untuk segala momen spesialmu!
+        </p>
+
+        <a href="#menu" class="btn">Lihat Menu →</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85">
+    </div>
+
+    <div class="features">
+        <div>🚚 <b>Pengiriman Cepat</b></div>
+        <div>🌸 <b>Kualitas Terbaik</b></div>
+        <div>💗 <b>Harga Terjangkau</b></div>
+    </div>
+</section>
+
+<!-- MENU -->
+<section class="section" id="menu">
+
+    <div class="title">
+        <h2>🧁 Menu Kue</h2>
+        <input type="text" id="search" placeholder="Cari kue...">
+    </div>
+
+    <div class="filters">
+        <button onclick="filterCake('Semua')">Semua</button>
+        <button onclick="filterCake('Cake')">Cake</button>
+        <button onclick="filterCake('Brownies')">Brownies</button>
+        <button onclick="filterCake('Donat')">Donat</button>
+        <button onclick="filterCake('Cupcake')">Cupcake</button>
+    </div>
+
+    <div class="products" id="products"></div>
+
+</section>
+
+<!-- KERANJANG -->
+<section class="section cart-section" id="cart">
+
+    <h2>🛒 Keranjang Belanja</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="summary">
+        <h3>Ringkasan Pesanan</h3>
+        <p>Subtotal: <span id="subtotal">Rp 0</span></p>
+        <p>Ongkir: <span>Rp 10.000</span></p>
+        <h3>Total: <span id="total">Rp 0</span></h3>
+    </div>
+
+</section>
+
+<!-- CHECKOUT -->
+<section class="section" id="checkout">
+
+    <h2>💌 Pesanan & Pengiriman</h2>
+
+    <form id="orderForm">
+
+        <h3>Data Pemesan</h3>
+
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" required>
+
+        <label>No. Telepon</label>
+        <input type="tel" name="telepon" required>
+
+        <label>Alamat Pengiriman</label>
+        <textarea name="alamat" required></textarea>
+
+        <button type="submit" class="btn">
+            Buat Pesanan ✨
+        </button>
+
+    </form>
+
+    <div id="success"></div>
+
+</section>
+
+<!-- TENTANG KAMI -->
+<section class="section about" id="about">
+
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=85">
+
+    <div>
+        <h2>💗 Tentang Kami</h2>
+
+        <p>
+            CakeShop adalah toko kue online yang hadir
+            untuk memberikan kebahagiaan melalui setiap gigitan.
+            Kami menggunakan bahan berkualitas tinggi
+            dan resep terbaik untuk menghasilkan kue yang lezat.
+        </p>
+
+        <i>
+            Karena setiap momen spesial layak dirayakan
+            dengan kue yang istimewa.
+        </i>
+    </div>
+
+</section>
+
+<footer>
+    <h3>🧁 CakeShop</h3>
+    <p>☎ 0812-3456-7890</p>
+    <p>✉ cakeshop@gmail.com</p>
+    <p>📍 Indonesia</p>
+    <p>© 2026 CakeShop</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
